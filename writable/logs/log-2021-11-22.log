@@ -1,0 +1,732 @@
+CRITICAL - 2021-11-22 06:49:32 --> Call to undefined method App\Models\ModeleClient::retourner_clients
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(19): CodeIgniter\Model->__call('retourner_clien...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->afficher_les_clients()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 06:52:12 --> Invalid file: AdministrateurEmploye/afficher_les_clients.php
+#0 C:\2022\ppe_chopesgames\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurE...')
+#1 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(23): view('AdministrateurE...', Array)
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->afficher_les_clients()
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 06:55:12 --> Undefined index: NOCLIENT
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(23): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->afficher_les_clients()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 06:55:38 --> Undefined index: NOCLIENT
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 16, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(23): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->afficher_les_clients()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 06:55:55 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\2022\ppe_chopesgames\system\Model.php on line 723
+#0 C:\2022\ppe_chopesgames\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('commande')
+#1 C:\2022\ppe_chopesgames\app\Models\Modele_commande.php(30): CodeIgniter\Model->__call('get', Array)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(35): App\Models\Modele_commande->retourner_commandes_client('13')
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('13')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 06:58:51 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\2022\ppe_chopesgames\system\Model.php on line 723
+#0 C:\2022\ppe_chopesgames\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('commande')
+#1 C:\2022\ppe_chopesgames\app\Models\Modele_commande.php(30): CodeIgniter\Model->__call('get', Array)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(35): App\Models\Modele_commande->retourner_commandes_client('14')
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('14')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 07:00:06 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\2022\ppe_chopesgames\system\Model.php on line 723
+#0 C:\2022\ppe_chopesgames\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('commande')
+#1 C:\2022\ppe_chopesgames\app\Models\Modele_commande.php(30): CodeIgniter\Model->__call('get', Array)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(35): App\Models\Modele_commande->retourner_commandes_client('14')
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('14')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 07:03:55 --> Undefined variable: clients
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 14, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('14')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:05:46 --> Illegal string offset 'id'
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('14')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:06:54 --> Illegal string offset 'id'
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('14')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:09:01 --> Illegal string offset 'id'
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('1')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:10:03 --> Illegal string offset 'id'
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('1')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:10:15 --> Illegal string offset 'id'
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('1')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:11:15 --> Illegal string offset 'id'
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('1')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:17:26 --> syntax error, unexpected 'findAll' (T_STRING), expecting ';'
+#0 C:\2022\ppe_chopesgames\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\2022\\ppe_cho...')
+#1 C:\2022\ppe_chopesgames\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mode...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mode...')
+#3 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(32): spl_autoload_call('App\\Models\\Mode...')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('1')
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#9 {main}
+CRITICAL - 2021-11-22 07:17:28 --> syntax error, unexpected 'findAll' (T_STRING), expecting ';'
+#0 C:\2022\ppe_chopesgames\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\2022\\ppe_cho...')
+#1 C:\2022\ppe_chopesgames\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mode...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mode...')
+#3 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(32): spl_autoload_call('App\\Models\\Mode...')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('1')
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#9 {main}
+CRITICAL - 2021-11-22 07:20:15 --> Invalid file: AdministrateurEmploye/historique_des_commandes.php
+#0 C:\2022\ppe_chopesgames\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurE...')
+#1 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('13')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 07:22:38 --> Undefined variable: client
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\historique_des_commandes.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 6, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('13')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:23:15 --> Undefined variable: client
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\historique_des_commandes.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 6, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('13')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:23:52 --> Undefined index: NOM
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\historique_des_commandes.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 6, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(39): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->historique_des_commandes('13')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:24:39 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\2022\ppe_chopesgames\system\Model.php on line 723
+#0 C:\2022\ppe_chopesgames\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('ligne')
+#1 C:\2022\ppe_chopesgames\app\Models\ModeleLigne.php(16): CodeIgniter\Model->__call('get', Array)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(51): App\Models\ModeleLigne->retourner_lignes('74')
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('74')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 07:28:55 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\2022\ppe_chopesgames\system\Model.php on line 723
+#0 C:\2022\ppe_chopesgames\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('ligne')
+#1 C:\2022\ppe_chopesgames\app\Models\ModeleLigne.php(16): CodeIgniter\Model->__call('get', Array)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(51): App\Models\ModeleLigne->retourner_lignes('77')
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 07:30:39 --> Undefined variable: commande
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\details_commande.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 7, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(55): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 07:31:27 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:32:21 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:33:07 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:33:09 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:33:10 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:34:17 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:34:22 --> Call to undefined method App\Models\Modele_commande::retourner_commandes
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(49): CodeIgniter\Model->__call('retourner_comma...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 07:34:47 --> Undefined variable: commande
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\details_commande.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 7, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(55): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->details_commande('77')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 08:44:20 --> Undefined variable: lesCategories
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\ajouter_un_produit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 13, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(42): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_produit()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 08:46:04 --> Trying to get property 'NOCATEGORIE' of non-object
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\ajouter_un_produit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\2022\\ppe_cho...', 14, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(42): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_produit()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 08:56:09 --> Call to undefined method App\Models\ModeleProduit::inserer_un_produit
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(71): CodeIgniter\Model->__call('inserer_un_prod...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_produit()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 09:03:42 --> Allowed fields must be specified for model: App\Models\ModeleProduit
+#0 C:\2022\ppe_chopesgames\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mode...')
+#1 C:\2022\ppe_chopesgames\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\2022\ppe_chopesgames\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\2022\ppe_chopesgames\app\Models\ModeleProduit.php(34): CodeIgniter\Model->insert(Array)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(71): App\Models\ModeleProduit->inserer_un_produit(Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_produit()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 09:21:26 --> Allowed fields must be specified for model: App\Models\ModeleProduit
+#0 C:\2022\ppe_chopesgames\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mode...')
+#1 C:\2022\ppe_chopesgames\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\2022\ppe_chopesgames\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\2022\ppe_chopesgames\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_produit()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 09:23:29 --> Trying to get property 'VITRINE' of non-object
+#0 C:\2022\ppe_chopesgames\app\Views\visiteur\lister_les_produits.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\2022\\ppe_cho...', 27, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(51): view('visiteur/lister...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 09:26:53 --> Unsupported operand types
+#0 C:\2022\ppe_chopesgames\system\View\View.php(214): include()
+#1 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#3 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(51): view('visiteur/lister...', Array)
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits()
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#9 {main}
+CRITICAL - 2021-11-22 09:43:05 --> Undefined property: App\Controllers\AdministrateurSuper::$ModeleIdentifiant
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 163, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:01:33 --> syntax error, unexpected '}', expecting end of file
+#0 C:\2022\ppe_chopesgames\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('AdministrateurS...')
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('AdministrateurS...')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:04:06 --> Invalid file: AdministrateurSuper/modifier_identifiants_bancaires_site.php
+#0 C:\2022\ppe_chopesgames\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurS...')
+#1 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(177): view('AdministrateurS...', Array)
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 10:04:40 --> Invalid file: AdministrateurSuper/modifier_identifiants_bancaires_site.php
+#0 C:\2022\ppe_chopesgames\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurS...')
+#1 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(177): view('AdministrateurS...', Array)
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 10:08:11 --> Undefined variable: identifiant
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\modifier_identifiants_bancaires_site.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 13, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(177): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 10:09:14 --> Undefined variable: identifiant
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\modifier_identifiants_bancaires_site.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 13, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(177): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 10:11:34 --> Undefined index: SITE
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\modifier_identifiants_bancaires_site.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 13, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(177): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 10:13:59 --> Undefined property: App\Controllers\AdministrateurSuper::$input
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 189, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:14:47 --> Call to undefined method App\Models\ModeleIdentifiant::uppdate
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(191): CodeIgniter\Model->__call('uppdate', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:15:05 -->  route cannot be found while reverse-routing.
+#0 C:\2022\ppe_chopesgames\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\2022\ppe_chopesgames\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(192): redirect('Visiteur/lister...', 'refresh')
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_identifiants_bancaires_site()
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 10:18:28 --> Undefined property: App\Controllers\Visiteur::$load
+#0 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(373): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 373, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->connexion_administrateur()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:29:30 --> Undefined index: id
+#0 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(301): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 301, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->se_connecter()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:30:57 --> Undefined offset: 0
+#0 C:\2022\ppe_chopesgames\app\Controllers\Client.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\2022\\ppe_cho...', 43, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:34:39 --> Undefined index: id
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurEmploye\afficher_les_clients.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 15, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurEmploye.php(23): view('AdministrateurE...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->afficher_les_clients()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 10:48:10 --> Undefined property: App\Controllers\Visiteur::$ModeleProduit
+#0 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 70, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_parmarque('8')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 10:51:14 --> Call to a member function paginate() on array
+#0 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_parmarque('8')
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#5 {main}
+CRITICAL - 2021-11-22 10:52:29 --> Undefined variable: pager
+#0 C:\2022\ppe_chopesgames\app\Views\visiteur\lister_les_produits.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 55, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(73): view('visiteur/lister...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_parmarque('8')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 10:56:24 --> Undefined variable: pager
+#0 C:\2022\ppe_chopesgames\app\Views\visiteur\lister_les_produits.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 55, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(73): view('visiteur/lister...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_parmarque('8')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 10:59:07 --> Call to a member function links() on null
+#0 C:\2022\ppe_chopesgames\system\View\View.php(214): include()
+#1 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#3 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(74): view('visiteur/lister...', Array)
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_parmarque('8')
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#9 {main}
+CRITICAL - 2021-11-22 10:59:37 --> Call to a member function links() on null
+#0 C:\2022\ppe_chopesgames\system\View\View.php(214): include()
+#1 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#3 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(74): view('visiteur/lister...', Array)
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_parmarque('15')
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#9 {main}
+CRITICAL - 2021-11-22 11:59:01 --> Undefined property: App\Controllers\AdministrateurSuper::$load
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 84, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->rendre_indisponible('38')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 12:08:40 --> Undefined property: App\Controllers\AdministrateurSuper::$ModeleProduit
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 88, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->rendre_indisponible('38')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 14:10:29 --> Undefined property: App\Controllers\AdministrateurSuper::$ModeleProduit
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 128, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('1')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 15:20:23 --> Undefined property: App\Controllers\AdministrateurSuper::$form_validation
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 148, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 15:21:10 --> Undefined index: vitrine
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\2022\\ppe_cho...', 157, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 15:22:24 --> Undefined property: App\Controllers\AdministrateurSuper::$load
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 160, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 15:23:05 --> Invalid file: AdministrateurSuper/modifier_produit.php
+#0 C:\2022\ppe_chopesgames\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurS...')
+#1 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#2 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(161): view('AdministrateurS...', Array)
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#4 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#8 {main}
+CRITICAL - 2021-11-22 15:28:52 --> Undefined variable: Vitrine
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\modifier_produit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 45, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(161): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 15:29:19 --> Undefined variable: Vitrine
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\modifier_produit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 45, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(161): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 15:36:46 --> Undefined property: App\Controllers\AdministrateurSuper::$input
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\2022\\ppe_cho...', 166, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 15:39:28 --> A non-numeric value encountered
+#0 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\2022\\ppe_cho...', 169, Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_produit('2')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 15:44:16 --> Undefined variable: Marque
+#0 C:\2022\ppe_chopesgames\app\Views\AdministrateurSuper\ajouter_un_produit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\2022\\ppe_cho...', 29, Array)
+#1 C:\2022\ppe_chopesgames\system\View\View.php(214): include('C:\\2022\\ppe_cho...')
+#2 C:\2022\ppe_chopesgames\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\2022\ppe_chopesgames\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\2022\ppe_chopesgames\app\Controllers\AdministrateurSuper.php(60): view('AdministrateurS...', Array)
+#5 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_produit()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#10 {main}
+CRITICAL - 2021-11-22 16:23:15 --> Call to undefined method App\Models\ModeleCategorie::retouner_categorie
+#0 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(88): CodeIgniter\Model->__call('retouner_catego...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_par_categorie('19')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 16:24:25 --> Call to undefined method App\Models\ModeleCategorie::retouner_categories
+#0 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(88): CodeIgniter\Model->__call('retouner_catego...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_par_categorie('19')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}
+CRITICAL - 2021-11-22 16:24:27 --> Call to undefined method App\Models\ModeleCategorie::retouner_categories
+#0 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(88): CodeIgniter\Model->__call('retouner_catego...', Array)
+#1 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_par_categorie('19')
+#2 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#6 {main}

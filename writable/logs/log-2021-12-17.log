@@ -1,0 +1,17 @@
+ERROR - 2021-12-17 08:20:03 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2021-12-17 08:20:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\2022\ppe_chopesgames\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\2022\ppe_chopesgames\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\2022\ppe_chopesgames\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\2022\ppe_chopesgames\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\2022\ppe_chopesgames\app\Models\ModeleProduit.php(27): CodeIgniter\BaseModel->findAll()
+#5 C:\2022\ppe_chopesgames\app\Controllers\Visiteur.php(20): App\Models\ModeleProduit->retourner_vitrine()
+#6 C:\2022\ppe_chopesgames\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#7 C:\2022\ppe_chopesgames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#8 C:\2022\ppe_chopesgames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2022\ppe_chopesgames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\2022\ppe_chopesgames\system\Commands\Server\rewrite.php(43): require_once('C:\\2022\\ppe_cho...')
+#11 {main}

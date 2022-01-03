@@ -1,0 +1,193 @@
+/* navbar */
+.navbar-nav > li
+{
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/* se connecter/s'enregistrer */
+.right {
+    float: right;
+  }
+/* accueil*/
+.marque {background-color: whitesmoke;border-left-style: solid;border-color: lightgrey;min-height: 100vh;text-align:center;}
+/* lister les produits */
+.categorie {background-color: whitesmoke;border-right-style: solid;border-color: lightgrey;min-height: 100vh;text-align:center;}
+/*.picture{width:255px;height:354px;background-color: white;
+ display: flex; justify-content:center;align-items:center;}*/
+.image{width: 100%;height: auto;max-width: 255px;max-height:354px ;}
+.img_panier{width: 100%; height: auto;}
+.cat{text-transform:capitalize;display: block;}
+
+.product-grid,.product-grid .product-image{position:relative;background-color: whitesmoke;}
+.product-grid{font-family:Poppins,sans-serif;text-align:center;border-radius:5px;overflow:hidden;z-index:1;}
+.product-grid:hover{box-shadow:0 0 10px rgba(0,0,0,.2)}
+.product-grid .product-image a{display:block}
+.product-grid .product-image img{width:100%;height:auto}
+
+.product-grid .product-content{padding:25px}
+.product-grid .title{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;}
+.product-grid .title a{color:#222}
+.product-grid .title a:hover{color:#16a085}
+
+.titrepage{text-align:center}
+
+.product-grid .price{color:#16a085;font-size:17px;font-weight:700;margin:0 2px 15px 0;display:block}
+.product-grid .price span{color:#909090;font-size:13px;font-weight:400;letter-spacing:0;text-decoration:line-through;text-align:left;vertical-align:middle;display:inline-block}
+.product-grid .add-to-cart{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:rgb(255, 255, 255);background:#16a085;font-weight:600;font-size:14px;border-radius:4px;}
+.product-grid:hover .add-to-cart{border:1px solid transparent;color:#fff}
+.product-grid .add-to-cart:hover{box-shadow:0 0 10px rgba(0,0,0,.5)}
+
+
+.product-grid .disponible{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:rgb(255, 255, 255);background:#F0C300;font-weight:600;font-size:14px;border-radius:4px;}
+.product-grid:hover .disponible{border:1px solid transparent;color:#fff}
+.product-grid .disponible:hover{box-shadow:0 0 10px rgba(0,0,0,.5)}
+
+.product-grid .indisponible{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:rgb(255, 255, 255);background:#EE1010;font-weight:600;font-size:14px;border-radius:4px;}
+.product-grid:hover .indisponible{border:1px solid transparent;color:#fff}
+.product-grid .indisponible:hover{box-shadow:0 0 10px rgba(0,0,0,.5)}
+
+.titrepage{text-align:center}
+
+.fav{color:#F0C300;}
+
+/* voir un produit */
+.detail{margin-left: 10px;}
+.top{margin-top: 50px;}
+.toppro{margin-top: 25px;}
+.infoprod{display: grid;}
+.product-info-tabs {
+	margin-top: 25px; 
+}
+.product-info-tabs .nav-tabs {
+	border-bottom: 2px solid #d8d8d8;
+}
+.product-info-tabs .nav-tabs .nav-item {
+	margin-bottom: 0;
+}
+.product-info-tabs .nav-tabs .nav-link {
+	border: none; 
+	border-bottom: 2px solid transparent;
+	color: #323232;
+}
+.product-info-tabs .nav-tabs .nav-item .nav-link:hover {
+	border: none; 
+}
+.product-info-tabs .nav-tabs .nav-item.show .nav-link, 
+.product-info-tabs .nav-tabs .nav-link.active, 
+.product-info-tabs .nav-tabs .nav-link.active:hover {
+	border: none; 
+	border-bottom: 2px solid #d8d8d8;
+	font-weight: bold;
+}
+.product-info-tabs .tab-content .tab-pane {
+	padding: 30px 20px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #7a7a7a;
+}
+.produit .ajoutpanier{border:1px solid #e5e5e5;display:block;padding:10px 20px;color:#888;font-weight:600;font-size:14px;max-width: 175px;}
+.produit .ajoutpanier{border:1px solid transparent;background:#16a085;color:#fff}
+.produit .ajoutpanier:hover{box-shadow:0 0 10px rgba(0,0,0,.5)}
+
+/* valider commande et details commande */
+.livraison{margin-top:5px;}
+.top{margin-top: 5px;}
+
+
+
+/*pied de page */
+main {min-height: 100vh;}
+.piedpage{color:grey;}
+
+/*couleur lien actuel pagination*/
+.purple{border-color:#0131B4; color:#0131B4;}
+.pagination li a {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+/* checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+
+/*  */ 
+.centre{text-align: center;background-color: black;color:white;}
+
+/* */
+.droite{float: right;}
+
+/* tableau*/
+.hover:hover{cursor:pointer;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input.primary:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/*  */
+.textareaidentifiant { height: 100px;}
+
+body > nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-bottom > div h4 {
+  color: rgb(247, 244, 244);
+}
+
+
+
+
+
+
+.input-res
+{
+     max-width: 100%;
+}

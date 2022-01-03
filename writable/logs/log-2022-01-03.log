@@ -1,0 +1,225 @@
+CRITICAL - 2022-01-03 02:12:45 --> Undefined index: LIBELLE
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\templates\header.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\BTS SI...', 48, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(26): view('templates/heade...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-03 02:13:00 --> Undefined index: LIBELLE
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\templates\header.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\BTS SI...', 48, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(26): view('templates/heade...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-03 02:13:49 --> Undefined index: LIBELLE
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\templates\header.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\BTS SI...', 48, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(26): view('templates/heade...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-03 02:13:58 --> Undefined index: LIBELLE
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\templates\header.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\BTS SI...', 48, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(26): view('templates/heade...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-03 02:14:27 --> Array to string conversion
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\templates\header.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\Users\\BTS SI...', 49, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(26): view('templates/heade...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-03 02:21:13 --> Trying to access array offset on value of type null
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\BTS SI...', 91, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_par_categorie('Action')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#6 {main}
+CRITICAL - 2022-01-03 02:21:53 --> Trying to access array offset on value of type null
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\BTS SI...', 91, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_par_categorie('Action')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#6 {main}
+CRITICAL - 2022-01-03 02:22:06 --> Trying to access array offset on value of type null
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\BTS SI...', 91, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits_par_categorie('Action')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#6 {main}
+CRITICAL - 2022-01-03 02:54:58 --> Undefined variable: categories
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\templates\header.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\BTS SI...', 47, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(105): view('templates/heade...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-03 02:56:24 --> Undefined variable: txtcategorie
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\AdministrateurSuper\ajouter_une_categorie.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\BTS SI...', 5, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurS...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(110): view('AdministrateurS...')
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+ERROR - 2022-01-03 03:06:48 --> Champ 'id' inconnu dans where clause
+CRITICAL - 2022-01-03 03:06:48 --> Champ 'id' inconnu dans where clause
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(592): CodeIgniter\Model->countAllResults()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(118): CodeIgniter\BaseModel->save(Array)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#13 {main}
+ERROR - 2022-01-03 03:07:52 --> Champ 'id' inconnu dans where clause
+CRITICAL - 2022-01-03 03:07:52 --> Champ 'id' inconnu dans where clause
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(592): CodeIgniter\Model->countAllResults()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(118): CodeIgniter\BaseModel->save(Array)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#13 {main}
+CRITICAL - 2022-01-03 03:42:30 --> There is no data to insert.
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(147): CodeIgniter\BaseModel->save(Array)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_marque()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#9 {main}
+ERROR - 2022-01-03 04:45:27 --> Champ 'id' inconnu dans where clause
+CRITICAL - 2022-01-03 04:45:27 --> Champ 'id' inconnu dans where clause
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(592): CodeIgniter\Model->countAllResults()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(182): CodeIgniter\BaseModel->save(Array)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_un_admin()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#13 {main}
+ERROR - 2022-01-03 07:30:23 --> Champ 'id' inconnu dans where clause
+CRITICAL - 2022-01-03 07:30:23 --> Champ 'id' inconnu dans where clause
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(304): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->supprimer_admin('test')
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#12 {main}
+CRITICAL - 2022-01-03 07:53:48 --> Too few arguments to function App\Controllers\AdministrateurSuper::modifier_admin(), 0 passed in C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_admin()
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2022-01-03 08:00:16 --> Too few arguments to function App\Controllers\AdministrateurSuper::modifier_admin(), 0 passed in C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_admin()
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2022-01-03 08:00:30 --> Too few arguments to function App\Controllers\AdministrateurSuper::modifier_admin(), 0 passed in C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_admin()
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2022-01-03 08:01:44 --> There is no data to update.
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(313): CodeIgniter\Model->update(Array)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_admin('greta')
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#9 {main}
+CRITICAL - 2022-01-03 08:02:20 --> There is no data to update.
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurSuper.php(313): CodeIgniter\Model->update(Array)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_admin('dupont')
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#9 {main}
