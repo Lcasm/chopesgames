@@ -25,10 +25,15 @@ if ($session->has('cart')) {
 
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+
+        <div class="order-0">
             <a class="navbar-brand" href="<?php echo site_url('Visiteur/accueil') ?>">
                 <img class="d-block" style="width:60px;height:38px;'" src="<?= base_url() . '/assets/images/logo.jpg' ?>" alt="Logo">
             </a>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-2 order-md-0 dual-collapse2">
+
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
@@ -42,7 +47,7 @@ if ($session->has('cart')) {
                 </li>
                 <li class="nav-item dropdown">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Catégory
+                        Catégorie
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <?php foreach($categories as $category){ ?> 
@@ -53,14 +58,7 @@ if ($session->has('cart')) {
             </ul>
         </div>
 
-
-        <div class="mx-auto order-0">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class=" w-75 order-2 ">
+        <div>
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <form class="form-inline" method="post" action="<?php echo site_url('Visiteur/lister_les_produits') ?>">
@@ -73,10 +71,7 @@ if ($session->has('cart')) {
             </ul>
         </div>
 
-
-
-
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <div class="navbar-collapse collapse w-100 order-4 dual-collapse2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="<?php echo site_url('Visiteur/afficher_panier') ?>" class="btn btn-info btn-md">
@@ -91,9 +86,10 @@ if ($session->has('cart')) {
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo site_url('AdministrateurEmploye/afficher_les_clients') ?>">Clients->Commandes</a>
-                            <a class="dropdown-item" href="">(2Do) Commandes non traitées</a>
+                            <a class="dropdown-item" href="<?php echo site_url('AdministrateurEmploye/commandes_non_traitees') ?>">Commandes non traitées</a>
                             <?php if ($session->get('statut') == 3) { ?>
                                 <a class="dropdown-item" href="<?php echo site_url('AdministrateurSuper/lister_admin') ?>">Liste des administrateurs</a>
+                                <a class="dropdown-item" href="<?php echo site_url('AdministrateurSuper/saisie_lettre_info') ?>">Saisie lettre d'information</a>
                                 <a class="dropdown-item" href="<?php echo site_url('AdministrateurSuper/ajouter_un_produit') ?>">Ajouter un produit</a>
                                 <a class="dropdown-item" href="<?php echo site_url('AdministrateurSuper/ajouter_une_categorie') ?>">Ajouter une catégorie</a>
                                 <a class="dropdown-item" href="<?php echo site_url('AdministrateurSuper/ajouter_une_marque') ?>">Ajouter une marque</a>
@@ -115,7 +111,7 @@ if ($session->has('cart')) {
                                 <a class="dropdown-item" href="<?php echo site_url('Client/historique_des_commandes') ?>">Mes commandes</a>
                                 <a class="dropdown-item" href="<?php echo site_url('Visiteur/s_enregistrer') ?>">Modifier son compte</a>
                             <?php } elseif ($session->get('statut') == 3) { ?>
-                                <a class="dropdown-item" href="<?= site_url('AdministrateurSuper/modifier_admin/'.$session->get('identifiant')) ?>">(2Do) Modifier son compte</a>
+                                <a class="dropdown-item" href="<?= site_url('AdministrateurSuper/modifier_admin/'.$session->get('identifiant')) ?>">Modifier son compte</a>
                             <?php } ?>
                             <a class="dropdown-item" href="<?php echo site_url('Client/se_de_connecter') ?>">Se déconnecter</a>
                         <?php } else { ?>
@@ -125,16 +121,18 @@ if ($session->has('cart')) {
                     </div>
                 </li>
 
-                <li>
-                </li>
-                <li>
-                </li>
                 <?php if (empty($session->get('statut'))) : ?>
                     <li class="nav-item droite">
                         <a href="<?php echo site_url('Visiteur/connexion_administrateur') ?>" class="fas fa-lock"></a>
                     </li>
                 <?php endif; ?>
             </ul>
+        </div>
+
+        <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     <main>

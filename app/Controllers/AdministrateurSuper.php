@@ -6,11 +6,86 @@ use App\Models\ModeleProduit;
 use App\Models\ModeleCategorie;
 use App\Models\ModeleIdentifiant;
 use App\Models\ModeleMarque;
+use App\Models\ModelNouvelles;
+use App\Models\ModelAbonnes;
+use app\Config\Email;
 
-helper(['url', 'assets', 'form']);
+helper(['url', 'assets', 'form','email']);
 
 class AdministrateurSuper extends BaseController
 {
+    public function saisie_lettre_info()
+    {
+        $modelCat = new ModeleCategorie();
+        $data['categories'] = $modelCat->retourner_categories();
+        $modelMarq = new ModeleMarque();
+        $data['marques'] = $modelMarq->retourner_marques();
+        $modelnouv = new ModelNouvelles();
+        $rules = ['txtobjet' => 'required','txttitre' => 'required','txtmessage' => 'required'];
+        if (!$this->validate($rules)) {
+            if ($_POST) $data['TitreDeLaPage'] = 'Corriger votre formulaire'; //correction
+            else {
+                $data['TitreDeLaPage'] = 'Saisie lettre d\'information';
+
+            }
+            echo view('templates/header', $data);
+            echo view('AdministrateurSuper/saisie_lettre_info');
+            echo view('templates/footer');
+        }
+        else
+        {
+            $donneesAInserer = array(
+                'objet' => $this->request->getPost('txtobjet'),
+                'titre' => $this->request->getPost('txttitre'),
+                'message' => $this->request->getPost('txtmessage')
+            );
+            $modelnouv->save($donneesAInserer);
+            $this->sendEmail($modelnouv->getInsertID());
+            //return redirect()->to('AdministrateurSuper/sendEmail');
+        }
+    }
+
+    public function saveAbonnes()
+    {
+        $modelabonnes = new ModelAbonnes();
+        $rules = ['txtmail' => 'required|trim|is_unique[abonnes.email]|valid_email'];
+        if (!$this->validate($rules)) {
+        }else{
+            $modelabonnes->save(['email' => $this->request->getPost('txtmail')]);
+            $this->sendEmail('nouveau',$this->request->getPost('txtmail'));
+        }
+        return redirect()->to('visiteur/lister_les_produits');
+    }
+
+    public function sendEmail($idData = 'nouveau',$user = 'all')
+    {
+        $modelabonnes = new ModelAbonnes();
+        $modelnouv = new ModelNouvelles();
+        $email = \Config\Services::email();
+        
+        if($idData == 'nouveau'){
+            $DataMail = $modelnouv->nouvelle();
+        }else{
+            $DataMail = $modelnouv->nouvelle($idData);
+        }
+        foreach($modelabonnes->returnAbonnes($user) as $abonne){
+            $email->setFrom('shop.game0911@gmail.com', 'Chopes Game');
+            $email->setSubject($DataMail['objet']);
+            $email->setMessage($DataMail['message']);
+            $email->setTo($abonne['email']);
+            if ($email->send()) 
+            {
+                echo 'Email successfully sent :'.$abonne['email'];
+            } 
+            else 
+            {
+                $data = $email->printDebugger(['headers']);
+                print_r($data);
+            }
+        }
+        
+        return redirect()->to('visiteur/lister_les_produits');
+    }
 
     public function ajouter_un_produit($prod = false)
     {
@@ -362,4 +437,5 @@ class AdministrateurSuper extends BaseController
             return redirect()->to('visiteur/lister_les_produits');
         }
     }
+ 
 }

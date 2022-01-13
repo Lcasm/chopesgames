@@ -1,0 +1,37 @@
+ERROR - 2022-01-12 06:58:04 --> Operand should contain 1 column(s)
+CRITICAL - 2022-01-12 06:58:04 --> Operand should contain 1 column(s)
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Models\ModeleLigne.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(262): App\Models\ModeleLigne->retourner_lignes(Array)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->paiement_accepte()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#13 {main}
+ERROR - 2022-01-12 07:01:42 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.
+)
+ERROR - 2022-01-12 07:04:55 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.
+)
+ERROR - 2022-01-12 08:48:48 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2022-01-12 08:48:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Models\ModeleProduit.php(27): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(20): App\Models\ModeleProduit->retourner_vitrine()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#11 {main}

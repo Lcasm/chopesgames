@@ -66,8 +66,6 @@
              </div>
     <div class="col-sm-1">
     </div>
-           
-        
-        
+           <a class="btn btn-success" href="<?= site_url('AdministrateurEmploye/commande_traitee/'.$commande['NOCOMMANDE']) ?>">Passer la commande à 'traitée'</a>
     </div>
 </div>

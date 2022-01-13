@@ -52,4 +52,37 @@ class AdministrateurEmploye extends BaseController
         echo view('AdministrateurEmploye/details_commande');
         echo view('templates/footer');
     }
+
+    public function commandes_non_traitees()
+    {
+        $modelCat = new ModeleCategorie();
+        $data['categories'] = $modelCat->retourner_categories();
+        $modelComm = new Modele_commande();
+        $data['commandes'] = $modelComm->retourner_commandes_non_traiter();
+        echo view('templates/header', $data);
+        echo view('AdministrateurEmploye/commandes_non_traitees');
+        echo view('templates/footer');
+    }
+
+    public function commande_traitee($nocommande)
+    {
+        helper('date');
+        $modelClient = new ModeleClient();
+        $modelComm = new Modele_commande();
+        $modelLigne = new ModeleLigne();
+        //$modelComm->update($nocommande,array('DATETRAITEMENT' => @date('Y-m-d H:i:s')));
+        $data['produits'] = $modelLigne->retourner_lignes($nocommande);
+        $data['commande'] = $modelComm->retourner_commande($nocommande);
+        $data['client'] = $modelClient->retourner_client_par_no($data['commande']['NOCLIENT']);
+        $data['titre'] = 'Votre commande vient d\'être expédiée';
+        //echo view('AdministrateurEmploye/commande_traitee',$data);
+        $message = view('AdministrateurEmploye/commande_traitee',$data);
+        $email = \Config\Services::email();
+        $email->setFrom('shop.game0911@gmail.com', 'Chopes Game');
+        $email->setTo($data['client']['EMAIL']);
+        $email->setSubject('Facture Chopes Game');
+        $email->setMessage($message);
+        $email->send();
+        return redirect()->to('AdministrateurEmploye/commandes_non_traitees');
+    }
 }

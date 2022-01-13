@@ -1,0 +1,144 @@
+CRITICAL - 2022-01-10 03:11:28 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:11:54 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:12:32 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:13:06 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:33:48 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:35:02 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:35:04 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:35:09 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:35:21 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 03:37:53 --> DOMDocument::loadHTMLFile(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\Users\\BTS SI...', 104, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Client.php(104): DOMDocument->loadHTMLFile('https://tpeweb....')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\client->validation_commande()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\client))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-10 04:38:30 --> Undefined variable: commandes
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\AdministrateurEmploye\commandes_non_traitees.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\BTS SI...', 17, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(77): view('AdministrateurE...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('74')
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-01-10 04:38:50 --> Invalid file: AdministrateurEmploye/commandes_traitee.php
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurE...')
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(77): view('AdministrateurE...', Array)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('74')
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#8 {main}
+CRITICAL - 2022-01-10 04:41:26 --> Invalid file: AdministrateurEmploye/commandes_traitee.php
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AdministrateurE...')
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(77): view('AdministrateurE...', Array)
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('74')
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#8 {main}
+CRITICAL - 2022-01-10 09:28:35 --> A non well formed numeric value encountered
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\AdministrateurEmploye\commande_traitee.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', 'C:\\Users\\BTS SI...', 75, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('AdministrateurE...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(77): view('AdministrateurE...', Array)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('74')
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}

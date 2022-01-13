@@ -252,7 +252,7 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         
         $email = \Config\Services::email();
         $modelCli = new ModeleClient();
-        
+
         $user = $modelCli->retourner_client_par_no($session->get('id'));
 
         $email->setSubject('Paiement Test');

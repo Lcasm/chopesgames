@@ -6,7 +6,6 @@ use CodeIgniter\Model;
 
 class ModeleClient extends Model
 {
-
     protected $table = 'client';
     protected $allowedFields = ['NOCLIENT', 'NOM', 'PRENOM', 'ADRESSE', 'VILLE', 'CODEPOSTAL', 'EMAIL', 'MOTDEPASSE'];
     protected $primaryKey = 'NOCLIENT';

@@ -1,0 +1,267 @@
+CRITICAL - 2022-01-11 20:05:55 --> file_get_contents(&lt;!-- DEBUG-VIEW START 1 APPPATH\Views\AdministrateurEmploye\commande_traitee.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;ChopesGames&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;http://...@1.16.0/dist/umd/popper.min.js&quot; integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://localhost:8080/assets/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/sweetalert/dist/sweetalert.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://localhost:8080/assets/js/myJs.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style=&quot;height:2px; background-color:black;&quot;&gt;&lt;/div&gt;
+    &lt;h1 class=&quot;p-3 text-center&quot;&gt;Votre commande vient d'être expédiée&lt;/h1&gt;
+    &lt;div style=&quot;height:3px; background-color:black;margin-bottom:5px;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;d-flex bd-highlight mb-3&quot;&gt;
+        &lt;div class=&quot;m-1 bg-primary&quot; style=&quot;width:5px;&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;mr-auto pt-2 bd-highlight&quot; &gt;
+            &lt;div&gt;
+                &lt;p class=&quot;m-0&quot;&gt;Facturer à:&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;lunel thomas&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;sdgfdfg dfgdfg 21212&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;thomas.lunel22@gmail.com&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;p-2 bd-highlight&quot;&gt;
+            &lt;h1 class=&quot;text-primary&quot;&gt;FACTURE&lt;/h1&gt;
+            &lt;p class=&quot;m-0&quot;&gt;Facture n°79&lt;/p&gt;
+            &lt;p class=&quot;m-0&quot;&gt;Date de commande 2022-01-10 04:09:59&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;div class=&quot;col-1 border border-dark bg-success&quot;&gt;
+                #
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Produit
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark&quot;&gt;
+                Prix HT
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Quantité
+            &lt;/div&gt;
+            &lt;div class=&quot;col-2 border border-dark bg-success&quot;&gt;
+                Total
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-1 border border-dark bg-success&quot;&gt;
+                #1            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Payday 2            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark&quot;&gt;
+                6,99€            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                1.00            &lt;/div&gt;
+            &lt;div class=&quot;col-2 border border-dark bg-success&quot;&gt;
+                8,39€            &lt;/div&gt;
+        &lt;/div&gt;
+            &lt;/div&gt;
+
+
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;div class=&quot;col-9&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-1&quot;&gt;
+                Total
+            &lt;/div&gt;
+            &lt;div class=&quot;col-2&quot;&gt;
+               8,39€ 
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    Merci !
+&lt;/body&gt;
+
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH\Views\AdministrateurEmploye\commande_traitee.php --&gt;
+): failed to open stream: Invalid argument
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\Users\\BTS SI...', 78, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(78): file_get_contents('<!-- DEBUG-VIEW...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('79')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-11 20:08:37 --> file_get_contents(&lt;!-- DEBUG-VIEW START 1 APPPATH\Views\AdministrateurEmploye\commande_traitee.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;ChopesGames&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;http://...@1.16.0/dist/umd/popper.min.js&quot; integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://localhost:8080/assets/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/sweetalert/dist/sweetalert.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://localhost:8080/assets/js/myJs.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style=&quot;height:2px; background-color:black;&quot;&gt;&lt;/div&gt;
+    &lt;h1 class=&quot;p-3 text-center&quot;&gt;Votre commande vient d'être expédiée&lt;/h1&gt;
+    &lt;div style=&quot;height:3px; background-color:black;margin-bottom:5px;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;d-flex bd-highlight mb-3&quot;&gt;
+        &lt;div class=&quot;m-1 bg-primary&quot; style=&quot;width:5px;&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;mr-auto pt-2 bd-highlight&quot; &gt;
+            &lt;div&gt;
+                &lt;p class=&quot;m-0&quot;&gt;Facturer à:&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;lunel thomas&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;sdgfdfg dfgdfg 21212&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;thomas.lunel22@gmail.com&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;p-2 bd-highlight&quot;&gt;
+            &lt;h1 class=&quot;text-primary&quot;&gt;FACTURE&lt;/h1&gt;
+            &lt;p class=&quot;m-0&quot;&gt;Facture n°79&lt;/p&gt;
+            &lt;p class=&quot;m-0&quot;&gt;Date de commande 2022-01-10 04:09:59&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;div class=&quot;col-1 border border-dark bg-success&quot;&gt;
+                #
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Produit
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark&quot;&gt;
+                Prix HT
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Quantité
+            &lt;/div&gt;
+            &lt;div class=&quot;col-2 border border-dark bg-success&quot;&gt;
+                Total
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-1 border border-dark bg-success&quot;&gt;
+                #1            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Payday 2            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark&quot;&gt;
+                6,99€            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                1.00            &lt;/div&gt;
+            &lt;div class=&quot;col-2 border border-dark bg-success&quot;&gt;
+                8,39€            &lt;/div&gt;
+        &lt;/div&gt;
+            &lt;/div&gt;
+
+
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;div class=&quot;col-9&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-1&quot;&gt;
+                Total
+            &lt;/div&gt;
+            &lt;div class=&quot;col-2&quot;&gt;
+               8,39€ 
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    Merci !
+&lt;/body&gt;
+
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH\Views\AdministrateurEmploye\commande_traitee.php --&gt;
+): failed to open stream: Invalid argument
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\Users\\BTS SI...', 78, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(78): file_get_contents('<!-- DEBUG-VIEW...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('79')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}
+CRITICAL - 2022-01-11 20:08:41 --> file_get_contents(&lt;!-- DEBUG-VIEW START 1 APPPATH\Views\AdministrateurEmploye\commande_traitee.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;ChopesGames&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;http://...@1.16.0/dist/umd/popper.min.js&quot; integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://localhost:8080/assets/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/sweetalert/dist/sweetalert.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://localhost:8080/assets/js/myJs.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style=&quot;height:2px; background-color:black;&quot;&gt;&lt;/div&gt;
+    &lt;h1 class=&quot;p-3 text-center&quot;&gt;Votre commande vient d'être expédiée&lt;/h1&gt;
+    &lt;div style=&quot;height:3px; background-color:black;margin-bottom:5px;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;d-flex bd-highlight mb-3&quot;&gt;
+        &lt;div class=&quot;m-1 bg-primary&quot; style=&quot;width:5px;&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;mr-auto pt-2 bd-highlight&quot; &gt;
+            &lt;div&gt;
+                &lt;p class=&quot;m-0&quot;&gt;Facturer à:&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;lunel thomas&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;sdgfdfg dfgdfg 21212&lt;/p&gt;
+                &lt;p class=&quot;m-0&quot;&gt;thomas.lunel22@gmail.com&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;p-2 bd-highlight&quot;&gt;
+            &lt;h1 class=&quot;text-primary&quot;&gt;FACTURE&lt;/h1&gt;
+            &lt;p class=&quot;m-0&quot;&gt;Facture n°79&lt;/p&gt;
+            &lt;p class=&quot;m-0&quot;&gt;Date de commande 2022-01-10 04:09:59&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;div class=&quot;col-1 border border-dark bg-success&quot;&gt;
+                #
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Produit
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark&quot;&gt;
+                Prix HT
+            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Quantité
+            &lt;/div&gt;
+            &lt;div class=&quot;col-2 border border-dark bg-success&quot;&gt;
+                Total
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-1 border border-dark bg-success&quot;&gt;
+                #1            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                Payday 2            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark&quot;&gt;
+                6,99€            &lt;/div&gt;
+            &lt;div class=&quot;col-3 border border-dark bg-secondary&quot;&gt;
+                1.00            &lt;/div&gt;
+            &lt;div class=&quot;col-2 border border-dark bg-success&quot;&gt;
+                8,39€            &lt;/div&gt;
+        &lt;/div&gt;
+            &lt;/div&gt;
+
+
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;div class=&quot;col-9&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-1&quot;&gt;
+                Total
+            &lt;/div&gt;
+            &lt;div class=&quot;col-2&quot;&gt;
+               8,39€ 
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    Merci !
+&lt;/body&gt;
+
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH\Views\AdministrateurEmploye\commande_traitee.php --&gt;
+): failed to open stream: Invalid argument
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\Users\\BTS SI...', 78, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\AdministrateurEmploye.php(78): file_get_contents('<!-- DEBUG-VIEW...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurEmploye->commande_traitee('79')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurEmploye))
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#7 {main}

@@ -30,4 +30,10 @@ class Modele_commande extends Model
        ->findAll();
    }
       
+   public function retourner_commandes_non_traiter()
+   {
+      return $this->where(['DATETRAITEMENT' => null])
+      ->join('client', 'client.NOCLIENT = commande.noclient')
+      ->findAll();
+   }
 } 

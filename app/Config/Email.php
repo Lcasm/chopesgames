@@ -47,35 +47,35 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost='smtp.sfr.fr';
+    public $SMTPHost='smtp.gmail.com';//'smtp.sfr.fr';
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser='ntt@neuf.fr';
+    public $SMTPUser='shop.game0911@gmail.com';
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass='xxxxxx';
+    public $SMTPPass='thomas0911';
 
     /**
      * SMTP Port
      *
      * @var int
      */
-    public $SMTPPort = 587;
+    public $SMTPPort = 465;
 
     /**
      * SMTP Timeout (in seconds)
      *
      * @var int
      */
-    public $SMTPTimeout = 15;
+    public $SMTPTimeout = 60;
 
     /**
      * Enable persistent SMTP connections
@@ -89,7 +89,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPCrypto = 'tls';
+    public $SMTPCrypto = 'ssl';
 
     /**
      * Enable word-wrap
