@@ -1,4 +1,3 @@
-<div>
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
@@ -16,23 +15,24 @@
                                 <input class="form-control" type="password" name="txtMdp" id="mdp" value="<?php echo set_value('txtMdp'); ?>" />
                                 <input type="checkbox" onclick="Affichermasquermdp()"> Afficher le mot de passe
                             </div>
-                            <input type="submit" name="submit" class="btn btn-primary btn-md" value="Valider">
-                            <div class="text-primary right">   
-                            <a class="btn btn-primary" href="<?php echo site_url('Visiteur/s_enregistrer') ?>">Crée un compte</a>
+                            
+                            <div class="text-primary position-relative">  
+                                <a class="btn btn-primary" href="<?php echo site_url('Visiteur/s_enregistrer') ?>">Crée un compte</a>
+                                <a href="<?php echo site_url('Visiteur/connexion_administrateur') ?>" class="fas fa-lock"></a>
+                                <input type="submit" name="submit" class="btn btn-primary btn-md end-0 position-absolute" value="Valider"> 
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <script language=javascript>
-     function Affichermasquermdp() {
-  var x = document.getElementById("mdp");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-} 
-      </script> 
+        function Affichermasquermdp() {
+            var x = document.getElementById("mdp");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        } 
+    </script> 

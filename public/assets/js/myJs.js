@@ -12,3 +12,22 @@ $(document).ready(function() {
         }
     });
 });
+
+
+var burger = document.getElementById('burger-menu')
+var search = document.getElementById('formSearch')
+var etat = burger.getAttribute('aria-expanded');
+var myCollapsible = document.getElementById('navbarSupportedContent');
+    
+myCollapsible.addEventListener('show.bs.collapse', function () {
+    burger.classList.remove('order-5');
+    search.classList.remove('order-3');
+    burger.classList.add('order-1');
+    search.classList.add('order-1');
+  })
+myCollapsible.addEventListener('hidden.bs.collapse', function () {
+    burger.classList.remove('order-1');
+    search.classList.remove('order-1');
+    burger.classList.add('order-5');
+    search.classList.add('order-3');
+  })
