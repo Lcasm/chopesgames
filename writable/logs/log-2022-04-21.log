@@ -1,0 +1,38 @@
+CRITICAL - 2022-04-21 09:11:29 --> Undefined index: NOCATEGORIE
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\visiteur\accueil.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\BTS SI...', 8, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/accuei...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(27): view('visiteur/accuei...')
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-04-21 09:11:34 --> Undefined index: NOCATEGORIE
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\visiteur\accueil.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\BTS SI...', 8, Array)
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/accuei...', Array, true)
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(27): view('visiteur/accuei...')
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#10 {main}
+CRITICAL - 2022-04-21 09:41:41 --> Bootstrap5 is not a valid Pager template.
+#0 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('Bootstrap5')
+#1 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('Bootstrap', 'Bootstrap5')
+#2 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Views\visiteur\lister_les_produits.php(70): CodeIgniter\Pager\Pager->links('Bootstrap', 'Bootstrap5')
+#3 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\Users\\BTS SI...')
+#4 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('visiteur/lister...', Array, true)
+#6 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(51): view('visiteur/lister...')
+#7 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->lister_les_produits()
+#8 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#9 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\BTS SIO\Desktop\cours\greta projets\ppe_chopesgames_ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#12 {main}

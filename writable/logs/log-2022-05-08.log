@@ -1,0 +1,24 @@
+CRITICAL - 2022-05-08 16:05:30 --> Undefined variable: _SESSION
+#0 C:\wamp64\www\ppe_chopesgames_ci4\app\Filters\SuperAdminFilter.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\p...', 25, Array)
+#1 C:\wamp64\www\ppe_chopesgames_ci4\system\Filters\Filters.php(173): App\Filters\SuperAdminFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('AdministrateurS...', 'before')
+#3 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-08 20:36:05 --> Undefined index: status
+#0 C:\wamp64\www\ppe_chopesgames_ci4\app\Views\templates\header.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\p...', 30, Array)
+#1 C:\wamp64\www\ppe_chopesgames_ci4\system\View\View.php(214): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\ppe_chopesgames_ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\ppe_chopesgames_ci4\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\wamp64\www\ppe_chopesgames_ci4\app\Controllers\Visiteur.php(25): view('templates/heade...', Array)
+#5 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\Visiteur->accueil()
+#6 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-08 20:38:59 --> Too few arguments to function App\Controllers\AdministrateurSuper::Vitrine(), 0 passed in C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->Vitrine()
+#1 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\wamp64\www\ppe_chopesgames_ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\ppe_chopesgames_ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

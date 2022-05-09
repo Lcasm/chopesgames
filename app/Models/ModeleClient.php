@@ -18,12 +18,17 @@ class ModeleClient extends Model
 
     public function retourner_client_par_no($noclient)
    {
-  return $this->where(['NOCLIENT' => $noclient])->first(); 
+        return $this->where(['NOCLIENT' => $noclient])->first(); 
    } 
 
    public function retourner_clients()
    {
-  return $this->findAll();
+        return $this->findAll();
    } 
+
+   public function anonymiser_un_compte($noclient)
+   {
+        return $this->update($noclient,['NOM' => null,'PRENOM' => null,'ADRESSE' => null,'VILLE' => null,'CODEPOSTAL' => null,'EMAIL' => null,'MOTDEPASSE' => null]);
+   }
 
 }

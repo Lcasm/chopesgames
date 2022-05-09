@@ -2,10 +2,14 @@
 
 namespace Config;
 
+use App\Controllers\client as ControllersClient;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
+use App\Filters\SuperAdminFilter;
+use App\Filters\AdminFilter;
+use App\Filters\Client;
 
 class Filters extends BaseConfig
 {
@@ -19,6 +23,9 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
+        'superAdmin' => SuperAdminFilter::class,
+        'admin' => AdminFilter::class,
+        'client' => Client::class
     ];
 
     /**

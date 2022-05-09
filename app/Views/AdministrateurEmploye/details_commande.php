@@ -19,12 +19,12 @@
         <tr>
         <td>
                 <?php if(!empty($produit['NOMIMAGE'])){ ?>
-                <a href="<?= base_url().'index.php/Visiteur/voir_un_produit/'.$produit['NOPRODUIT']?>"><img src="<?= base_url().'/assets/images/'.$produit['NOMIMAGE'].'.jpg'?>" width="80"/></a>
+                <a href="<?= base_url().'/Visiteur/voir_un_produit/'.$produit['NOPRODUIT']?>"><img src="<?= base_url().'/assets/images/'.$produit['NOMIMAGE'].'.jpg'?>" width="80"/></a>
                 <?php } else{?>
-                    <a href="<?= base_url().'index.php/Visiteur/voir_un_produit/'.$produit['NOPRODUIT']?>"><img src="<?= base_url().'/assets/images/nonimage.jpg'?>" width="80"/></a>
+                    <a href="<?= base_url().'/Visiteur/voir_un_produit/'.$produit['NOPRODUIT']?>"><img src="<?= base_url().'/assets/images/nonimage.jpg'?>" width="80"/></a>
                 <?php } ?>
             </td>
-                <td><a  href="<?= base_url().'index.php/Visiteur/voir_un_produit/'.$produit['NOPRODUIT']?>"><?php echo $produit['LIBELLE']; ?></a></td>
+                <td><a  href="<?= base_url().'/Visiteur/voir_un_produit/'.$produit['NOPRODUIT']?>"><?php echo $produit['LIBELLE']; ?></a></td>
                 <td><?php echo $produit['PRIXHT']; ?>€</td>
                 <td><?php echo $produit['TAUXTVA']; ?></td>
                 <td><?php echo $produit['QUANTITECOMMANDEE']; ?></td>

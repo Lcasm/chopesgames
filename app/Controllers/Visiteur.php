@@ -8,8 +8,7 @@ use App\Models\ModeleClient;
 use App\Models\ModeleCategorie;
 use App\Models\ModeleMarque;
 use App\Models\ModeleAdministrateur;
-//use App\Models\ModeleAdministrateur;
-//$pager = \Config\Services::pager();
+use App\Models\ModelAbonnes;
 helper(['url', 'assets']);
 class Visiteur extends BaseController
 {
@@ -284,12 +283,13 @@ class Visiteur extends BaseController
                 'VILLE' => $this->request->getPost('txtVille'),
                 'CODEPOSTAL' => $this->request->getPost('txtCP'),
                 'EMAIL' => $this->request->getPost('txtEmail'),
-                'MOTDEPASSE' => $this->request->getPost('txtMdp')
+                'MOTDEPASSE' => password_hash($this->request->getPost('txtMdp'),PASSWORD_DEFAULT)
             ];
 
             if (empty($session->get('statut'))) { // enregistrement
                 $modelCli->save($compte);
                 $data['TitreDeLaPage'] = "Bravo ! vous êtes enregister sur ChopesGames";
+                return redirect()->to('Visiteur/se_connecter');
             } else { // envoi d'une modification de compte
                 $id = $session->get('id');
                 if ($modelCli->update($id, $compte))
@@ -309,7 +309,7 @@ class Visiteur extends BaseController
         $data['TitreDeLaPage'] = 'Se connecter';
         $rules = [ //régles de validation
             'txtEmail' => 'required|valid_email|is_not_unique[client.EMAIL,id,{id}]',
-            'txtMdp'   => 'required|is_not_unique[client.MOTDEPASSE,id,{id}]'
+            'txtMdp'   => 'required'
         ];
 
         $messages = [ //message à renvoyer en cas de non respect des règles de validation
@@ -320,7 +320,6 @@ class Visiteur extends BaseController
             ],
             'txtMdp'    => [
                 'required' => 'Un mot de passe est requis',
-                'is_not_unique' => 'Mot de passe incorrect',
             ]
         ];
         $modelCat = new ModeleCategorie();
@@ -334,26 +333,18 @@ class Visiteur extends BaseController
         } else {
             $modelCli = new ModeleClient();
             $Identifiant = esc($this->request->getPost('txtEmail'));
-            $MdP = esc($this->request->getPost('txtMdp'));
+            $MdP = $this->request->getPost('txtMdp');
 
             $UtilisateurRetourne = $modelCli->retourner_clientParMail($Identifiant);
 
-            if (!$UtilisateurRetourne == null) {
-                // if (password_verify($MdP,$UtilisateurRetourne->MOTDEPASSE))
-                // PAS D'ENCODAGE DU MOT DE PASSE POUR FACILITATION OPERATIONS DE TESTS (ENCODAGE A FAIRE EN PRODUCTION!)
-                if ($MdP == $UtilisateurRetourne["MOTDEPASSE"]) {
-                    if (!empty($session->get('statut'))) {
-                        unset($_SESSION['cart']);
-                    }
-                    $session->set('id', $UtilisateurRetourne["NOCLIENT"]);
-                    $session->set('statut', 1);
-                    return redirect()->to('Visiteur/accueil');
-                } else {
-                    $data['TitreDeLaPage'] = 'Mot de passe incorrect';
-                    echo view('visiteur/se_connecter', $data);
+            if (password_verify($MdP,$UtilisateurRetourne["MOTDEPASSE"])  && !$UtilisateurRetourne == null) {
+                if (!empty($session->get('statut'))) {
+                    unset($_SESSION['cart']);
                 }
+                $session->set('id', $UtilisateurRetourne["NOCLIENT"]);
+                $session->set('statut', 1);
+                return redirect()->to('Visiteur/accueil');
             } else {
-                $data['TitreDeLaPage'] = 'Adresse E-mail incorrecte';
                 echo view('visiteur/se_connecter', $data);
             }
         }
@@ -393,11 +384,10 @@ class Visiteur extends BaseController
             $Identifiant = esc($this->request->getPost('txtIdentifiant'));
             $MdP = esc($this->request->getPost('txtMotDePasse'));
             $adminRetourne = $modelAdm->retourner_administrateur_par_id($Identifiant);
-
-            if (!$adminRetourne == null) {
+            if (!($adminRetourne == null)) {
                 //  if (password_verify($MdP,$adminRetourne->MOTDEPASSE))
                 // PAS D'ENCODAGE DU MOT DE PASSE POUR FACILITATION OPERATIONS DE TESTS (ENCODAGE A FAIRE EN PRODUCTION!)
-                if ($MdP == $adminRetourne["MOTDEPASSE"]) {
+                if (password_verify($MdP,$adminRetourne["MOTDEPASSE"])) {
                     $session->set('identifiant', $adminRetourne["IDENTIFIANT"]);
                     $session->set('mail', $adminRetourne["EMAIL"]);
                     if (!empty($session->get('statut'))) {
@@ -410,14 +400,38 @@ class Visiteur extends BaseController
                     }
                     return redirect()->to('Visiteur/accueil');
                 } else {
-                    $data['TitreDeLaPage'] = 'Mot de passe incorrect';
+                    $data['TitreDeLaPage'] = 'Identifiant ou Mot de passe incorrect';
                     echo view('visiteur/connexion_administrateur', $data);
                 }
             } else {
-                $data['TitreDeLaPage'] = 'Identifiant incorrecte';
+                $data['TitreDeLaPage'] = 'Identifiant ou Mot de passe incorrect';
                 echo view('visiteur/connexion_administrateur', $data);
             }
             echo view('templates/footer');
         }
     }
+
+    public function anonymiser()
+    {
+        $session = session();
+        $modelCli = new ModeleClient();
+        $modelCli->anonymiser_un_compte($session->get('id'));
+        $session->destroy();
+        return redirect()->to('Visiteur/accueil');
+    }
+
+    public function saveAbonnes()
+    {
+        $modelabonnes = new ModelAbonnes();
+        $modelSuperAdmin = new ModeleAdministrateur();
+        $rules = ['txtmail' => 'required|trim|is_unique[abonnes.email]|valid_email'];
+        if (!$this->validate($rules)) {
+        }else{
+            $modelabonnes->save(['email' => $this->request->getPost('txtmail')]);
+            $modelSuperAdmin->sendEmail('nouveau',$this->request->getPost('txtmail'));
+        }
+        return redirect()->to('visiteur/lister_les_produits');
+    }
+    
+
 }

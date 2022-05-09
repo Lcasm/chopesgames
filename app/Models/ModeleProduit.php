@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
+use CodeIgniter\CLI\Console;
 use CodeIgniter\Model;
+use mysqli;
 
 class ModeleProduit extends Model
 {
@@ -11,9 +13,10 @@ class ModeleProduit extends Model
     protected $allowedFields = ['NOPRODUIT ', 'NOCATEGORIE', 'NOMARQUE', 'LIBELLE', 'DETAIL', 'PRIXHT', 'TAUXTVA', 'NOMIMAGE', 'QUANTITEENSTOCK', 'DATEAJOUT', 'DISPONIBLE', 'VITRINE'];
     protected $primaryKey = 'NOPRODUIT';
 
-
     public function retourner_produits($pNoArticle = false)
     {
+        
+
         if ($pNoArticle === false) {
             return $this->findAll();
         }
@@ -25,6 +28,18 @@ class ModeleProduit extends Model
     {
         return $this->where(['VITRINE' => 1])
             ->findAll();
+    }
+
+    public function update_vitrine($id)
+    {
+        $bool = $this->select("VITRINE")->where(['NOPRODUIT' => $id])->first()["VITRINE"];
+        echo $bool;
+        if($bool == 0 || $bool == null){
+            $bool = 1;
+        }else{
+            $bool = 0;
+        }
+        return $this->update($id,['VITRINE' => $bool]);
     }
 
     public function produits_search($match)
@@ -46,4 +61,18 @@ class ModeleProduit extends Model
     {
         return $this->where(['NOCATEGORIE' => $categorie]);
     }
+
+    public function retournerSlug($id)
+    {
+        return $this->select('NOMIMAGE,NOM')
+        ->join('marque','marque.NOMARQUE=produit.NOMARQUE')
+        ->where(['NOPRODUIT' => $id])->first();
+    }
+
+    public function retournerId($slug)
+    {
+        return $this->select('NOPRODUIT')->where(['NOMIMAGE' => $slug])->first();
+    }
+
+
 }

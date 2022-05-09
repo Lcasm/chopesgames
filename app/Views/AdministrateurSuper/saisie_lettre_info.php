@@ -13,7 +13,7 @@
                         <input class="form-control" type="input" name="txttitre" value="<?php //echo set_value('txtobjet', $txtcategorie); ?>" /><br />
                         <label class="text-primary" for="txtmessage">Message:</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="txtmessage"><?php //echo set_value('txtobjet', $txtcategorie); ?></textarea><br>
-                        <input class="btn btn-primary btn-md" type="submit" value="Ajouter la catégorie"></button>
+                        <input class="btn btn-primary btn-md" type="submit" value="Envoyer la lettre"></button>
                     </form>
                 </div>
             </div>

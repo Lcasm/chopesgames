@@ -20,4 +20,10 @@ class ModeleMarque extends Model
 
         return $this->where(['NOMARQUE' => $pNoMarque])->first();
     }
+
+    public function retourner_marques_id($NomMarque)
+    {
+        return $this->where(['NOM' => $NomMarque])->first();
+    }
+
 }

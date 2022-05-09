@@ -41,20 +41,8 @@ class AdministrateurSuper extends BaseController
             );
             $modelnouv->save($donneesAInserer);
             $this->sendEmail($modelnouv->getInsertID());
-            //return redirect()->to('AdministrateurSuper/sendEmail');
+            return redirect()->to('AdministrateurSuper/sendEmail');
         }
-    }
-
-    public function saveAbonnes()
-    {
-        $modelabonnes = new ModelAbonnes();
-        $rules = ['txtmail' => 'required|trim|is_unique[abonnes.email]|valid_email'];
-        if (!$this->validate($rules)) {
-        }else{
-            $modelabonnes->save(['email' => $this->request->getPost('txtmail')]);
-            $this->sendEmail('nouveau',$this->request->getPost('txtmail'));
-        }
-        return redirect()->to('visiteur/lister_les_produits');
     }
 
     public function sendEmail($idData = 'nouveau',$user = 'all')
@@ -230,7 +218,7 @@ class AdministrateurSuper extends BaseController
         $data['marques'] = $modelMarq->retourner_marques();
         $modelAdmin = new ModeleAdministrateur();
         $rules = [
-            'txtIdentifiant' => 'required',
+            'txtIdentifiant' => 'required|is_unique[administrateur.IDENTIFIANT,id,{id}]',
             'txtMdp' => 'required',
             'txtEmail' => 'required'
         ];
@@ -250,7 +238,7 @@ class AdministrateurSuper extends BaseController
             $donneesAInserer = array(
                 'IDENTIFIANT' => $this->request->getPost('txtIdentifiant'),
                 'EMAIL' => $this->request->getPost('txtEmail'),
-                'MOTDEPASSE' => $this->request->getPost('txtMdp'),
+                'MOTDEPASSE' => password_hash($this->request->getPost('txtMdp'),PASSWORD_DEFAULT),
                 'PROFIL' => 'Employé'
             );
             $modelAdmin->insert($donneesAInserer);
@@ -371,7 +359,7 @@ class AdministrateurSuper extends BaseController
         $data['admin'] = $modelAdmin->retourner_administrateur_par_id($id);
         $rules = [
             'txtMdp' => 'required',
-            'txtEmail' => 'required'
+            'txtEmail' => 'required|is_unique[administrateur.EMAIL,IDENTIFIANT,{txtIdentifiant}]'
         ];
         if (!$this->validate($rules)) {
             if ($_POST) $data['TitreDeLaPage'] = 'Corriger votre formulaire'; //correction
@@ -384,6 +372,7 @@ class AdministrateurSuper extends BaseController
         }
         else
         {
+            
             $donneesAInserer = array(
                 'EMAIL' => $this->request->getPost('txtEmail'),
                 'MOTDEPASSE' => $this->request->getPost('txtMdp'),
@@ -438,4 +427,9 @@ class AdministrateurSuper extends BaseController
         }
     }
  
+    function Vitrine($id){
+        $modelProd = new ModeleProduit();
+        $modelProd->update_vitrine($id);
+        return redirect()->to('visiteur/lister_les_produits');
+    }
 }

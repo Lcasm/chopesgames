@@ -31,9 +31,9 @@
                                 <input class="form-control" type="password" name="txtMdp" id="mdp" value="<?php echo set_value('txtMdp'); ?>" />
                                 
                                 
-                            <input type="submit" name="submit" class="btn btn-primary btn-md" value="Valider">
-                            <div class="text-primary right">
-                            <a class="btn btn-primary" href="<?php echo site_url('Visiteur/se_connecter') ?>">Se connecter</a>
+                            <div class="text-primary mt-2">
+                                <?php if(!empty(session()->get('statut'))){ ?> <a class="btn btn-primary " href="<?php echo site_url('Visiteur/anonymiser') ?>">Supprimer mon compte</a> <?php } ?>
+                                <input type="submit" name="submit" class="btn btn-primary btn-md float-end" value="Valider">
                             </div>
                         </form>
                     </div>
@@ -42,12 +42,12 @@
         </div>
     </div>
     <script language=javascript>
-     function Affichermasquermdp() {
-  var x = document.getElementById("mdp");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-} 
-      </script> 
+        function Affichermasquermdp() {
+            var x = document.getElementById("mdp");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        } 
+    </script> 

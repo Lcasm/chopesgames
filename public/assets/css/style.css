@@ -26,6 +26,7 @@
 .product-grid:hover{box-shadow:0 0 10px rgba(0,0,0,.2)}
 .product-grid .product-image a{display:block}
 .product-grid .product-image img{width:100%;height:auto}
+.img-size{width: 271px;height: 100%;}
 
 .product-grid .product-content{padding:25px}
 .product-grid .title{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;}
@@ -99,7 +100,6 @@
 
 
 /*pied de page */
-main {min-height: 100vh;}
 .piedpage{color:grey;}
 
 /*couleur lien actuel pagination*/
@@ -182,12 +182,32 @@ body > nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-bottom > div h4 {
   color: rgb(247, 244, 244);
 }
 
-
-
-
-
+#search{
+  padding-right: 0;
+}
 
 .input-res
 {
      max-width: 100%;
+}
+
+
+@media (max-width:450px)
+{
+  #formSearch{
+    width: 200px;
+  }
+
+}
+
+@media (max-width:780px)
+{
+  .marque,.categorie{
+    display: none;
+  }
+
+  #carousel,#produits{
+    width: 100%;
+  }
+
 }

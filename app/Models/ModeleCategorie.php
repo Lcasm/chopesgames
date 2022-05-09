@@ -21,4 +21,10 @@ class ModeleCategorie extends Model
         return $this->where(['NOCATEGORIE' => $pNoCategorie])
         ->first();
     }
+
+    public function retourner_categories_Id($name){
+        return $this->select("NOCATEGORIE")
+        ->where(['LIBELLE' => $name])
+        ->first();
+    }
 }

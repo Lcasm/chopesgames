@@ -1,5 +1,5 @@
 <?php $session = session(); ?>
-<div class="container toppro">
+<div class="container mt-4">
     <div class="row">
         <div class="col-md-5">
 
@@ -14,9 +14,9 @@
             <div>
                 <h3><?php echo $unProduit["LIBELLE"] ?></h3>
                 <hr />
-                <?php echo anchor('Visiteur/lister_les_produits_parmarque/' . $marque["NOMARQUE"], $marque["NOM"]);
+                <?php echo anchor('Visiteur/lister_les_produits_parmarque/' . $marque["NOMARQUE"], $marque["NOM"],'class="text-decoration-none"');
                 echo '<hr/>';
-                echo anchor('Visiteur/lister_les_produits_par_categorie/' . $categorie["NOCATEGORIE"], $categorie["LIBELLE"]);
+                echo anchor('Visiteur/lister_les_produits_par_categorie/' . $categorie["NOCATEGORIE"], $categorie["LIBELLE"],'class="text-decoration-none"');
                 echo '<hr/>'; ?>
                 <div>
                     <?php echo number_format((($unProduit["PRIXHT"]) + ($unProduit["TAUXTVA"])), 2, ",", ' '), '€' ?>
@@ -34,7 +34,7 @@
                     <?php if ($unProduit["DISPONIBLE"] == 0) {
                         echo 'Rupture de stock..';
                     } ?><br />
-                    <span class="produit"> <a class="btn ajoutpanier <?php if ($unProduit["DISPONIBLE"] == 0) {
+                    <span class="produit"> <a class="btn btn-primary  ajoutpanier <?php if ($unProduit["DISPONIBLE"] == 0) {
                                                                             echo 'disabled';
                                                                         } ?>" href="<?php echo site_url('Visiteur/ajouter_au_panier/' . $unProduit["NOPRODUIT"]);  ?>">Ajouter au panier</a></span>
                 <?php } ?>

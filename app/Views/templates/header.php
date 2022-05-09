@@ -13,30 +13,24 @@ if ($session->has('cart')) {
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() . 'assets/images/favicon.ico' ?>">
     <link rel="alternate" type="application/rss+XML" title="ChopesGames" href="<?php echo site_url('AdministrateurSuper/flux_rss') ?>" />
 
-    <!-- <link rel="stylesheet" href="<?php //= css_url('bootstrap.min') ?>"> bootstrap 4-->
-    <!-- <link rel="stylesheet" href="<?php //= css_url('style') ?>"> -->
+    <link rel="icon" type="icon" sizes="16x16" href="<?= img_url("Icon.ico") ?>">
+    <link rel="stylesheet" href="<?= css_url('style') ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- bootstrap 5 -->
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> bootstrap 4 -->
-    <!-- <script src="<?php //echo js_url('bootstrap.min') ?>"></script> bootstrap 4 -->
-    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
     
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <header class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <header class="navbar navbar-expand-xl navbar-dark bg-dark ">
         <div class="container-fluid">
 
             <a class="navbar-brand order-0" href="<?php echo site_url('Visiteur/accueil') ?>">
-                <img class="d-block" style="width:60px;height:38px;'" src="<?= base_url() . '/assets/images/logo.jpg' ?>" alt="Logo">
+                <img class="d-block" style="height:38px;'" src="<?= img_url("Icon.png") ?>" alt="ChopesGames">
             </a>     
 
 
@@ -44,7 +38,7 @@ if ($session->has('cart')) {
                 <ul class="navbar-nav me-auto mb-lg-0">
 
                     <li class="nav-item m-2">
-                        <a class="btn btn-primary" href="<?= site_url('Visiteur/lister_les_produits') ?>">Lister tous les Produits</a>
+                        <a class="btn btn-primary " href="<?= site_url('Visiteur/lister_les_produits') ?>">Lister tous les Produits</a>
                     </li>
 
                     <li class="nav-item dropdown m-2">
@@ -64,7 +58,7 @@ if ($session->has('cart')) {
 
             <form id="formSearch" class="d-flex order-3" method="post" action="<?php echo site_url('Visiteur/lister_les_produits') ?>">
                 <input class="form-control me-2" type="search" name="search" id='search' placeholder="Search">
-                <button class="btn btn-success" type="submit">
+                <button class="btn btn-success me-2" type="submit">
                     <i class="fas fa-search"></i>
                 </button>
             </form> 
@@ -108,7 +102,7 @@ if ($session->has('cart')) {
                                 <?php if ($session->get('statut') == 1) { ?>
                                     <a class="dropdown-item" href="<?php echo site_url('Client/historique_des_commandes') ?>">Mes commandes</a>
                                     <a class="dropdown-item" href="<?php echo site_url('Visiteur/s_enregistrer') ?>">Modifier son compte</a>
-                                <?php } elseif ($session->get('statut') == 3) { ?>
+                                <?php } else { ?>
                                     <a class="dropdown-item" href="<?= site_url('AdministrateurSuper/modifier_admin/'.$session->get('identifiant')) ?>">Modifier son compte</a>
                                 <?php } ?>
                                 <a class="dropdown-item" href="<?php echo site_url('Client/se_de_connecter') ?>">Se déconnecter</a>
